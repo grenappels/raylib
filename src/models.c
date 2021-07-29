@@ -3144,7 +3144,7 @@ RayCollision GetRayCollisionMesh(Ray ray, Mesh mesh, Matrix transform)
         for (int i = 0; i < triangleCount; i++)
         {
             Vector3 a, b, c;
-            Vector3* vertdata = (Vector3*)mesh.vertices;
+            Vector3* vertdata = (Vector3*)mesh.animVertices;
 
             if (mesh.indices)
             {
